@@ -1,199 +1,271 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<style>
-  #tlayout {
-    width: 70%;
-    margin: 0 auto;   /* 居中 */
-  }
-</style>
-<title>Wenhan Chang</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenhan Chang | PhD Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Menu</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="https://scholar.google.com.hk/citations?user=TOeVVwkAAAAJ&hl=zh-CN">Google Scholar</a></div>
-<div class="menu-item"><a href="https://github.com/ChangWenhan">GitHub</a></div>
-<div class="menu-item"><a href="https://blog.oaeen.com/">Friend’s Blog</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Wenhan Chang </h1>
-</div>
-<table class="imgtable"><tr><td>
-<a href="https://github.com/ChangWenhan"><img src="photos/bio.JPG" alt="alt text" width="131px" height="160px" /></a>&nbsp;</td>
-<td align="left"><p>A first-year PhD student.,<br />
-Zhongnan University of Economics and Law, <br />
-Wuhan, China <br /> 
-E-mail: <a href="mailto:changwh530@gmail.com">changwh530@gmail.com</a></p>
-</td></tr></table>
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar"></div>
+    
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Wenhan Chang</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+                <a href="https://github.com/ChangWenhan" target="_blank">GitHub</a>
+                <a href="https://scholar.google.com.hk/citations?user=TOeVVwkAAAAJ&hl=zh-CN" target="_blank">Scholar</a>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="photos/bio.JPG" alt="Wenhan Chang">
+            </div>
+            <div class="hero-text">
+                <h1>Wenhan Chang</h1>
+                <p class="hero-subtitle">PhD Researcher in AI Safety & Privacy</p>
+                <p class="hero-affiliation">
+                    <span>Zhongnan University of Economics and Law</span>
+                    <span class="divider">|</span>
+                    <span>Wuhan, China</span>
+                </p>
+                <div class="hero-links">
+                    <a href="mailto:changwh530@gmail.com" class="btn btn-primary">Email</a>
+                    <a href="https://github.com/ChangWenhan" target="_blank" class="btn btn-secondary">GitHub</a>
+                    <a href="https://scholar.google.com.hk/citations?user=TOeVVwkAAAAJ&hl=zh-CN" target="_blank" class="btn btn-secondary">Scholar</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
 
-<h2>About me</h2>
-<p>Wenhan Chang received his B.Eng. degree in 2022 and M.Eng. degree in 2025 from China University of Geosciences, Wuhan, China. He is currently pursuing a Ph.D. degree at School of Information Engineering, Zhongnan University of Economics and Law, China. His research interests include security and privacy preserving in deep learning.
-</p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I received my B.Eng. degree in 2022 and M.Eng. degree in 2025 from China University of Geosciences, Wuhan. I am currently pursuing a Ph.D. degree at School of Information Engineering, Zhongnan University of Economics and Law.</p>
+                <p>My research interests include <span class="highlight">security and privacy preserving in deep learning</span>, with a focus on LLM safety alignment, poisoning attacks and defenses, and machine unlearning.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 - 2029 (Expected)</div>
+                        <h3>Ph.D. in Modern Technology Management</h3>
+                        <p class="timeline-school">Zhongnan University of Economics and Law</p>
+                        <p class="timeline-courses">Microeconomics, Econometrics, Business Intelligence</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2025</div>
+                        <h3>M.S. in Electronic Information</h3>
+                        <p class="timeline-school">China University of Geosciences</p>
+                        <p class="timeline-courses">Machine Learning, Information Security, Matrix Analysis</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2022</div>
+                        <h3>B.E. in Computer Science and Technology</h3>
+                        <p class="timeline-school">China University of Geosciences</p>
+                        <p class="timeline-courses">C++ Programming, Embedded Systems, Computer Network</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2>Education</h2>
-<p>PhD, Modern Technology Management, <a href="https://wap.zuel.edu.cn/">Zhongnan University of Economics and Law</a>, 09.2025-06.2029 Expected</p>
-<ul>
-<li><p>Main Courses: Microeconomics​, Econometrics​, Business Intelligence​.</p>
-</li>
-</ul>
-<p>M.S., Electronic Information, <a href="https://www.cug.edu.cn/">China University of Geosciences</a>, 09.2022-06.2025</p>
-<ul>
-<li><p>Main Courses: Machine Learning, Information Security, Matrix Analysis.</p>
-</li>
-</ul>
-<p>B.E., Computer Science and Technology, <a href="https://www.cug.edu.cn/">China University of Geosciences</a>, 09.2018-06.2022</p>
-<ul>
-<li><p>Main Courses: C++ Programming, Embedded Systems, Computer Network and Communication, Computer Control System.</p>
-</li>
-</ul>
+    <section id="research" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>LLM Safety Alignment</h3>
+                    <p>Ensuring large language models behave safely and align with human values.</p>
+                </div>
+                <div class="research-card">
+                    <h3>Privacy Preserving</h3>
+                    <p>Protecting sensitive information in machine learning systems.</p>
+                </div>
+                <div class="research-card">
+                    <h3>Poisoning Attack & Defense</h3>
+                    <p>Studying adversarial attacks against ML systems and developing defenses.</p>
+                </div>
+                <div class="research-card">
+                    <h3>Machine Unlearning</h3>
+                    <p>Removing specific data influence from trained models.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            
+            <div class="pub-section">
+                <h3 class="pub-section-title">As First/Corresponding Author</h3>
 
-<h2>Research</h2>
-<p>My research interests include: </p>
-<ul>
-<li><p>LLM Safety Alignment</p>
-</li>
-<li><p>Privacy preserving</p>
-</li>
-</ul>
-<h3>Current work</h3>
-<ul>
-<li><p>LLMs Safety and Security</p>
-</li>
-<li><p>Poisoning attack and defense</p>
-</li>
-<li><p>LLMs Fine-tuning security</p>
-</li>
-</ul>
+                <div class="pub-item">
+                    <div class="pub-year">2026</div>
+                    <div class="pub-content">
+                        <h4>Zero-shot Class Unlearning via Layer-wise Relevance Analysis and Neuronal Path Perturbation</h4>
+                        <p class="pub-authors"><strong>W Chang</strong>, T Zhu, P Xiong*, Y Wu, F Guan, W Zhou</p>
+                        <p class="pub-venue">IEEE Transactions on Dependable and Secure Computing <span class="pub-rank">(CCF-A)</span></p>
+                    </div>
+                </div>
 
-<h3>Recent Publications</h3>
+                <div class="pub-item">
+                    <div class="pub-year">2026</div>
+                    <div class="pub-content">
+                        <h4>Unreal Thinking: Chain-of-Thought Hijacking via Two-stage Backdoor</h4>
+                        <p class="pub-authors"><strong>W Chang</strong>, T Zhu, P Xiong, F Guan, W Zhou</p>
+                        <p class="pub-venue">arXiv preprint arXiv:2604.09235</p>
+                    </div>
+                </div>
+                
+                <div class="pub-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h4>Chain-of-Lure: A Synthetic Narrative-Driven Approach to Compromise Large Language Models</h4>
+                        <p class="pub-authors"><strong>W Chang</strong>, T Zhu*, Y Zhao, S Song, P Xiong, W Zhou, Y Li</p>
+                        <p class="pub-venue">arXiv preprint arXiv:2505.17519</p>
+                    </div>
+                </div>
 
-<!-- 第一部分：Wenhan C 第一/通讯作者 -->
-<h4>As First/Corresponding Author</h4>
-<ul>
+                <div class="pub-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h4>From Thinking to Output: Chain-of-Thought and Text Generation Characteristics in Reasoning Language Models</h4>
+                        <p class="pub-authors">J Liu, Z Xu, Y Fang, Y Chen, Z Ying, <strong>W Chang</strong>*</p>
+                        <p class="pub-venue">KSEM 2025 <span class="pub-rank">(CCF-C)</span></p>
+                    </div>
+                </div>
 
-<!-- 2025 -->
-<li>
-  <p><b>Chain-of-Lure: A Synthetic Narrative-Driven Approach to Compromise Large Language Models</b><br>
-  <b>W Chang</b>, T Zhu*, Y Zhao, S Song, P Xiong, W Zhou, Y Li<br>
-  <i>arXiv preprint arXiv:2505.17519.</i> 2025
-  </p>
-</li>
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h4>Class Machine Unlearning for Complex Data via Concepts Inference and Data Poisoning</h4>
+                        <p class="pub-authors"><strong>W Chang</strong>, T Zhu*, H Xu, W Liu, W Zhou</p>
+                        <p class="pub-venue">arXiv preprint arXiv:2405.15662</p>
+                    </div>
+                </div>
 
-<li>
-  <p><b>From Thinking to Output: Chain-of-Thought and Text Generation Characteristics in Reasoning Language Models</b><br>
-  J Liu, Z Xu, Y Fang, Y Chen, Z Ying, <b>W Chang</b>*<br>
-  <i>The 18th International Conference on Knowledge Science, Engineering and Management (KSEM 2025).</i> 2025
-  </p>
-</li>
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h4>Gradient-based Defense Methods for Data Leakage in Vertical Federated Learning</h4>
+                        <p class="pub-authors"><strong>W Chang</strong>, T Zhu*</p>
+                        <p class="pub-venue">Computers & Security, 139, 103744 <span class="pub-rank">(CCF-B)</span></p>
+                    </div>
+                </div>
+            </div>
 
-<!-- 2024 -->
-<li>
-  <p><b>Class Machine Unlearning for Complex Data via Concepts Inference and Data Poisoning</b><br>
-  <b>W Chang</b>, T Zhu*, H Xu, W Liu, W Zhou<br>
-  <i>arXiv preprint arXiv:2405.15662.</i> 2024
-  </p>
-</li>
+            <div class="pub-section">
+                <h3 class="pub-section-title">As Co-author</h3>
 
-<li>
-  <p><b>Zero-shot Class Unlearning via Layer-wise Relevance Analysis and Neuronal Path Perturbation</b><br>
-  <b>W Chang</b>, T Zhu, P Xiong*, Y Wu, F Guan, W Zhou<br>
-  <i>arXiv preprint arXiv:2410.23693.</i> 2024
-  </p>
-</li>
+                <div class="pub-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h4>Large Language Models Merging for Enhancing the Link Stealing Attack on Graph Neural Networks</h4>
+                        <p class="pub-authors">F Guan, T Zhu*, <strong>W Chang</strong>, W Ren, W Zhou</p>
+                        <p class="pub-venue">IEEE Transactions on Dependable and Secure Computing <span class="pub-rank">(CCF-A)</span></p>
+                    </div>
+                </div>
 
-<li>
-  <p><b>Gradient-based Defense Methods for Data Leakage in Vertical Federated Learning</b><br>
-  <b>W Chang</b>, T Zhu*<br>
-  <i>Computers & Security, 139, 103744.</i> 2024
-  </p>
-</li>
+                <div class="pub-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h4>TeleAI at SemEval-2025 Task 8: Advancing Table Reasoning Framework with Large Language Models</h4>
+                        <p class="pub-authors">S Xiong, M Li, D Wang, Y Zhao, J Zhang, C Pan, H He, X Li, <strong>W Chang</strong>, et al.</p>
+                        <p class="pub-venue">SemEval 2025 (ACL Workshop)</p>
+                    </div>
+                </div>
 
-</ul>
+                <div class="pub-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h4>T2R-BENCH: A Benchmark for Real World Table-to-Report Task</h4>
+                        <p class="pub-authors">J Zhang, C Pan, S Xiong, K Wei, Y Zhao, X Li, J Peng, X Gu, J Yang, <strong>W Chang</strong>, et al.</p>
+                        <p class="pub-venue">EMNLP 2025 <span class="pub-rank">(CCF-B)</span></p>
+                    </div>
+                </div>
 
+                <div class="pub-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h4>TableReasoner: Advancing Table Reasoning Framework with Large Language Models</h4>
+                        <p class="pub-authors">S Xiong, D Wang, Y Zhao, J Zhang, C Pan, H He, X Li, <strong>W Chang</strong>, Z He, et al.</p>
+                        <p class="pub-venue">arXiv preprint arXiv:2507.08046</p>
+                    </div>
+                </div>
 
-<!-- 第二部分：其他合作作者 -->
-<h4>As Co-author</h4>
-<ul>
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h4>Generative Adversarial Networks Unlearning</h4>
+                        <p class="pub-authors">H Sun, T Zhu*, <strong>W Chang</strong>, W Zhou</p>
+                        <p class="pub-venue">IEEE Transactions on Dependable and Secure Computing <span class="pub-rank">(CCF-A)</span></p>
+                    </div>
+                </div>
 
-<!-- 2025 -->
-<li>
-  <p><b>Generative Adversarial Networks Unlearning</b><br>
-  H Sun, T Zhu*, <b>W Chang</b>, W Zhou<br>
-  <i>IEEE Transactions on Dependable and Secure Computing.</i> 2025
-  </p>
-</li>
+                <div class="pub-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h4>A Two-stage Model Extraction Attack on GANs with a Small Collected Dataset</h4>
+                        <p class="pub-authors">H Sun, T Zhu*, <strong>W Chang</strong>, W Zhou</p>
+                        <p class="pub-venue">Computers & Security, 137, 103634 <span class="pub-rank">(CCF-B)</span></p>
+                    </div>
+                </div>
 
-<li>
-  <p><b>Large Language Models Merging for Enhancing the Link Stealing Attack on Graph Neural Networks</b><br>
-  F Guan, T Zhu*, <b>W Chang</b>, W Ren, W Zhou<br>
-  <i>IEEE Transactions on Dependable and Secure Computing.</i> 2025
-  </p>
-</li>
+                <div class="pub-item">
+                    <div class="pub-year">2020</div>
+                    <div class="pub-content">
+                        <h4>Model Poisoning Defense on Federated Learning: A Validation Based Approach</h4>
+                        <p class="pub-authors">Y Wang, T Zhu*, <strong>W Chang</strong>, S Shen, W Ren</p>
+                        <p class="pub-venue">NSS 2020 <span class="pub-rank">(EI)</span></p>
+                    </div>
+                </div>
+            </div>
 
-<li>
-  <p><b>TeleAI at SemEval-2025 Task 8: Advancing Table Reasoning Framework with Large Language Models</b><br>
-  S Xiong, M Li, D Wang, Y Zhao, J Zhang, C Pan, H He, X Li, <b>W Chang</b>, et al.<br>
-  <i>Proceedings of the 19th International Workshop on Semantic Evaluation (ACL 2025 Workshop).</i> 2025
-  </p>
-</li>
+            <p class="pub-note">* indicates corresponding author. <a href="https://scholar.google.com.hk/citations?user=TOeVVwkAAAAJ&hl=zh-CN" target="_blank">Full list on Google Scholar</a></p>
+        </div>
+    </section>
 
-<li>
-  <p><b>T2R-BENCH: A Benchmark for Real World Table-to-Report Task</b><br>
-  J Zhang, C Pan, S Xiong, K Wei, Y Zhao, X Li, J Peng, X Gu, J Yang, <b>W Chang</b>, et al.<br>
-  <i>The 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP 2025).</i> 2025
-  </p>
-</li>
+    <footer class="footer">
+        <div class="container">
+            <p>Wenhan Chang | changwh530@gmail.com</p>
+        </div>
+    </footer>
 
-<li>
-  <p><b>TableReasoner: Advancing Table Reasoning Framework with Large Language Models</b><br>
-  S Xiong, D Wang, Y Zhao, J Zhang, C Pan, H He, X Li, <b>W Chang</b>, Z He, et al.<br>
-  <i>arXiv preprint arXiv:2507.08046.</i> 2025
-  </p>
-</li>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
 
-<!-- 2024 -->
-<li>
-  <p><b>A Two-stage Model Extraction Attack on GANs with a Small Collected Dataset</b><br>
-  H Sun, T Zhu*, <b>W Chang</b>, W Zhou<br>
-  <i>Computers & Security, 137, 103634.</i> 2024
-  </p>
-</li>
-
-<!-- 2020 -->
-<li>
-  <p><b>Model Poisoning Defense on Federated Learning: A Validation Based Approach</b><br>
-  Y Wang, T Zhu*, <b>W Chang</b>, S Shen, W Ren<br>
-  <i>International Conference on Network and System Security, 207–223 (NSS 2020).</i> 2020
-  </p>
-</li>
-
-</ul>
-
-<p><b>Note</b>: * indicates the corresponding author.</p>
-<p><a href="https://scholar.google.com.hk/citations?user=TOeVVwkAAAAJ&hl=zh-CN">Full list of publications in Google Scholar</a>.</p>
-
-<!-- <p><br />
-<a href="cv.pdf">A brief cv</a>.</p> -->
-</td>
-</tr>
-</table>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
