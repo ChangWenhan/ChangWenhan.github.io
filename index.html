@@ -18,6 +18,9 @@
     </script>
 </head>
 <body>
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+    
     <!-- Scroll Progress Bar -->
     <div class="progress-bar"></div>
     
@@ -68,30 +71,57 @@
                     <!-- <a href="mailto:changwh530@gmail.com" class="btn btn-primary">Email</a> -->
                     <a href="https://github.com/ChangWenhan" target="_blank" class="btn btn-secondary">GitHub</a>
                     <a href="https://scholar.google.com.hk/citations?user=TOeVVwkAAAAJ&hl=zh-CN" target="_blank" class="btn btn-secondary">Scholar</a>
-                    <a href="https://www.zhihu.com/people/christchang-79" target="_blank" class="btn btn-secondary">Zhihu</a>
+                    <a href="https://www.zhihu.com/people/christchang-79" target="_blank" class="btn btn-secondary">Zhihu </a>
                 </div>
             </div>
         </div>
 
         <div class="hero-news">
-            <div class="hero-news-title">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                Recent News
+            <div class="hero-news-header">
+                <div class="hero-news-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                    Recent News
+                </div>
+                <div class="hero-news-scroll-hint">
+                    <span>scroll</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                </div>
             </div>
-            <ul class="hero-news-list">
-                <li class="hero-news-item">
-                    <span class="hero-news-date">2026.04.14</span>
-                    <span class="hero-news-text">My paper "Zero-shot Class Unlearning via Layer-wise Relevance Analysis and Neuronal Path Perturbation" has been accepted by IEEE TDSC! 🎉</span>
-                </li>
-                <li class="hero-news-item">
-                    <span class="hero-news-date">2026.04.13</span>
-                    <span class="hero-news-text">My paper "Unreal Thinking: Chain-of-Thought Hijacking via Two-stage Backdoor" is now available on arXiv 🌸</span>
-                </li>
-                <li class="hero-news-item">
-                    <span class="hero-news-date">2026.04.13</span>
-                    <span class="hero-news-text">My personal homepage is officially online and updated! 🎉</span>
-                </li>
-            </ul>
+            <div class="hero-news-timeline">
+                <div class="hero-news-scroll">
+                    <ul class="hero-news-list">
+                        <li class="hero-news-item" data-index="0">
+                            <span class="hero-news-date">2026.04.14</span>
+                            <span class="hero-news-text">My paper "Zero-shot Class Unlearning via Layer-wise Relevance Analysis and Neuronal Path Perturbation" has been accepted by IEEE TDSC! 🎉</span>
+                        </li>
+                        <li class="hero-news-item" data-index="1">
+                            <span class="hero-news-date">2026.04.13</span>
+                            <span class="hero-news-text">My paper "Unreal Thinking: Chain-of-Thought Hijacking via Two-stage Backdoor" is now available on arXiv 🌸</span>
+                        </li>
+                        <li class="hero-news-item" data-index="2">
+                            <span class="hero-news-date">2026.04.13</span>
+                            <span class="hero-news-text">My personal homepage is officially updated and online! 🎉</span>
+                        </li>
+                        <li class="hero-news-item" data-index="3">
+                            <span class="hero-news-date">2025.05.31</span>
+                            <span class="hero-news-text">My paper (corresponding author) "From Thinking to Output: Chain-of-Thought and Text Generation Characteristics in Reasoning Language Models" has been accepted by KSEM 2025! 🎉</span>
+                        </li>
+                        <li class="hero-news-item" data-index="4">
+                            <span class="hero-news-date">2025.05.23</span>
+                            <span class="hero-news-text">My paper "Chain-of-Lure: A Universal Jailbreak Attack Framework using Unconstrained Synthetic Narratives" is now available on arXiv 🌸</span>
+                        </li>
+                        <li class="hero-news-item" data-index="5">
+                            <span class="hero-news-date">2024.04.15</span>
+                            <span class="hero-news-text">My paper "Class Machine Unlearning for Complex Data via Concepts Inference and Data Poisoning" is now available on arXiv 🌸</span>
+                        </li>
+                        <li class="hero-news-item" data-index="6">
+                            <span class="hero-news-date">2024.04.15</span>
+                            <span class="hero-news-text">My paper "Gradient-based Defense Methods for Data Leakage in Vertical Federated Learning" has been accepted by Computers & Security! 🎉</span>
+                        </li>
+                        <!-- 可以继续添加更多news -->
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="scroll-indicator">
