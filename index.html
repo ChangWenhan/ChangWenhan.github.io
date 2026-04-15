@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Prevent theme flash (FOUC) by checking theme inline -->
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
 </head>
 <body>
     <!-- Scroll Progress Bar -->
@@ -16,14 +24,23 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="#" class="nav-logo">Wenhan Chang</a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path class="line top" d="M3 6h18"/>
+                    <path class="line middle" d="M3 12h18"/>
+                    <path class="line bottom" d="M3 18h18"/>
+                </svg>
+            </button>
+
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#research">Research</a>
-                <a href="#publications">Publications</a>
-                <a href="https://github.com/ChangWenhan" target="_blank">GitHub</a>
-                <a href="https://scholar.google.com.hk/citations?user=TOeVVwkAAAAJ&hl=zh-CN" target="_blank">Scholar</a>
-                <button class="theme-toggle" aria-label="Toggle theme">
-                    <span class="theme-icon">🌙</span>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="https://github.com/ChangWenhan" target="_blank" class="nav-link">GitHub</a>
+                <a href="https://scholar.google.com.hk/citations?user=TOeVVwkAAAAJ&hl=zh-CN" target="_blank" class="nav-link">Scholar</a>
+                <button class="theme-toggle" aria-label="Toggle dark/light theme">
+                    <span class="theme-icon" aria-hidden="true">🌙</span>
                 </button>
             </div>
         </div>

@@ -43,11 +43,11 @@ const themeToggle = document.querySelector('.theme-toggle');
 const themeIcon = document.querySelector('.theme-icon');
 const html = document.documentElement;
 
-// Check for saved theme preference
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') {
-    html.setAttribute('data-theme', 'light');
+// Set initial icon based on theme that was already evaluated in <head>
+if (html.getAttribute('data-theme') === 'light') {
     themeIcon.textContent = '☀️';
+} else {
+    themeIcon.textContent = '🌙';
 }
 
 themeToggle.addEventListener('click', () => {
@@ -121,3 +121,71 @@ document.querySelectorAll('.pub-rank').forEach(rank => {
         rank.classList.add('ei');
     }
 });
+
+// Mobile menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const navLinksItems = document.querySelectorAll('.nav-links a');
+
+menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    navLinks.classList.toggle('open');
+});
+
+// Close mobile menu when a link is clicked
+navLinksItems.forEach(item => {
+    item.addEventListener('click', () => {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navLinks.classList.remove('open');
+    });
+});
+
+// Scroll Spy: Highlight active nav link on scroll
+const sections = document.querySelectorAll('.section');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinksItems.forEach(li => {
+        li.classList.remove('active');
+        if (li.getAttribute('href') === '#' + current) {
+            li.classList.add('active');
+        }
+    });
+});
+
+// Typewriter effect for Hero subtitle
+const subtitle = document.querySelector('.hero-subtitle');
+if (subtitle) {
+    const textToType = subtitle.textContent;
+    subtitle.textContent = ''; // clear initially
+    subtitle.classList.add('typing'); 
+    
+    let charIndex = 0;
+    const typeWriter = () => {
+        if (charIndex < textToType.length) {
+            subtitle.textContent += textToType.charAt(charIndex);
+            charIndex++;
+            // random interval for realistic typing feeling
+            const typeDelay = Math.random() * 50 + 50;
+            setTimeout(typeWriter, typeDelay);
+        } else {
+            // keep the cursor blinking a few times, then remove it
+            setTimeout(() => {
+                subtitle.classList.replace('typing', 'typing-done');
+            }, 1500);
+        }
+    };
+    
+    // Slight initial delay before typing starts
+    setTimeout(typeWriter, 600);
+}
